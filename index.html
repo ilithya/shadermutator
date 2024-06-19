@@ -34,14 +34,14 @@ void main() {
 	
 	vec3 c1 = vec3(1.0, 1.0, 0.0); // yellow
 	vec3 c2 = vec3(0.0, 0.6, 0.4); // green
-	vec3 c3 = vec3(.5, 0.0, .5); // purple
+	vec3 c3 = vec3(0.5, 0.0, 0.5); // purple
 	
 	// rows
 	float row = fract(uv.y * 10.0 + u_time * 0.5);
 	
 	float diagonalRow = step(
 		0.35, 
-		fract(uv2.x * 50.)
+		fract(uv2.x * 50.0)
 	);
 	row += diagonalRow;
 	
@@ -49,7 +49,7 @@ void main() {
 	float col = fract(uv.x * 10.0);
 	col = step(0.1, col);
 	
-	float diagonalCol = step(0.5, fract(uv2.y * 50.));
+	float diagonalCol = step(0.5, fract(uv2.y * 50.0));
 	col += diagonalCol;
 	
 	// GREEN STRIPES
