@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shadermutator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noimageindex">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Mutate your shader. Paste in your GLSL shader code, and then click the 🎲 button to mutate all the numbers!">
+  <title>Shader Mutator</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <!-- CREATIVE CODING SESSION  -->
 <!-- For the RC Never Graduate Week 2024 by blinry - https://blinry.org/ & ilithya - https://www.ilithya.rocks/ --> 
-
 <div id="shadercollab">
 <button id="dice" type="button">🎲</button>
 <!-- Shader taken from curiouslyminded -->
@@ -75,6 +78,8 @@ void main() {
 <script id="vertex" type="x-shader/x-vertex">
 void main() { gl_Position = vec4(position, 1.0); }
 </script>
+
+<footer role="contentinfo" style="visibility:hidden;">by blinry & ilithya © 2024</footer>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js'></script><script  src="./script.js"></script>
 </body>
