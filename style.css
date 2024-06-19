@@ -35,7 +35,7 @@ button {
   cursor: pointer;
   font-size: 2rem;
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 20px;
   z-index: 90;
 }
